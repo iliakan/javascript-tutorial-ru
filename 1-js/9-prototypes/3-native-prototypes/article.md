@@ -128,7 +128,7 @@ alert( user.toUpperCase() ); // ВАСЯ
 
 Можно даже попробовать записать в этот временный объект свойство:
 
-```js run
+```js run no-strict
 // попытаемся записать свойство в строку:
 var user = "Вася";
 user.age = 30;
@@ -138,7 +138,7 @@ alert( user.age ); // undefined
 */!*
 ```
 
-Свойство `age` было записано во временный объект, который был тут же уничтожен, так что смысла в такой записи немного.
+Свойство `age` было записано во временный объект, который был тут же уничтожен, так что смысла в такой записи немного. Пример выше выполняется без `use strict`, в строгом режиме была бы ошибка, и это хорошо, так как такая запись, по большому счету, не имеет смысла.
 
 ````warn header="Конструкторы `String/Number/Boolean` -- только для внутреннего использования"
 Технически, можно создавать объекты для примитивов и вручную, например `new Number`. Но в ряде случаев получится откровенно бредовое поведение. Например:
@@ -304,4 +304,3 @@ if (!Object.create) {
     Другие прототипы изменять менее опасно, но все же не рекомендуется во избежание конфликтов.
 
     Отдельно стоит изменение с целью добавления современных методов в старые браузеры, таких как <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create">Object.create</a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/keys">Object.keys</a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/bind">Function.prototype.bind</a> и т.п. Это допустимо и как раз делается [es5-shim](https://github.com/kriskowal/es5-shim).
-
