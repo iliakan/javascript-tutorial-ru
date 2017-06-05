@@ -49,6 +49,9 @@ function User(name) {
 User.prototype.sayHi = function() {
   alert(this.name);
 };
+
+let user = new User("Вася");
+user.sayHi(); // Вася
 ```
 
 В обоих случаях `new User` будет создавать объекты. Метод `sayHi` также в обоих случаях находится в прототипе.
