@@ -127,7 +127,7 @@ Sec-WebSocket-Accept: hsBlbuDTkk24srzEOTBUlZAlC2g=
 - Заголовок `Sec-WebSocket-Extensions: deflate-frame` означает, что браузер поддерживает модификацию протокола, обеспечивающую сжатие данных.
 
     Это говорит не о самих данных, а об улучшении способа их передачи. Браузер сам формирует этот заголовок.
-- Заголовок `Sec-WebSocket-Protocol: soap, wamp` говорит о том, что по WebSocket браузер собирается передавать не просто какие-то данные, а данные в протоколах [SOAP](http://ru.wikipedia.org/wiki/SOAP) или WAMP ("The WebSocket Application Messaging Protocol"). Стандартные подпротоколы регистрируются в специальном каталоге [IANA](http://www.iana.org/assignments/websocket/websocket.xml).
+- Заголовок `Sec-WebSocket-Protocol: soap, wamp` говорит о том, что по WebSocket браузер собирается передавать не просто какие-то данные, а данные в протоколах [SOAP](http://ru.wikipedia.org/wiki/SOAP) или WAMP ("The WebSocket Application Messaging Protocol"). Стандартные подпротоколы регистрируются в специальном каталоге [IANA](http://www.iana.org/assignments/websocket/websocket.xhtml).
 
     Этот заголовок браузер поставит, если указать второй необязательный параметр `WebSocket`:
 
