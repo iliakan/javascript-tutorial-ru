@@ -73,4 +73,9 @@ if (!module.parent) {
   console.log('Сервер запущен на порту 8080');
 } else {
   exports.accept = accept;
+  
+  // close all waiting connections in order to get graceful reload
+  process.on('SIGINT', function() {
+    publish("");
+  });
 }
