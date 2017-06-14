@@ -25,7 +25,7 @@ function onSubscribe(req, res) {
 
 function publish(message) {
 
-  //console.log("есть сообщение, клиентов:" + Object.keys(subscribers).length);    
+  //console.log("есть сообщение, клиентов:" + Object.keys(subscribers).length);
 
   for (var id in subscribers) {
     //console.log("отсылаю сообщение " + id);
@@ -73,4 +73,11 @@ if (!module.parent) {
   console.log('Сервер запущен на порту 8080');
 } else {
   exports.accept = accept;
+
+  process.on('SIGINT', function() {
+    for (var id in subscribers) {
+      var res = subscribers[id];
+      res.end();
+    }
+  });
 }
