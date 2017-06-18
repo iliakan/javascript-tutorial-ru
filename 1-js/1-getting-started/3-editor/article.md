@@ -38,11 +38,13 @@
 
 Достойны внимания:
 
-- <a href="http://www.sublimetext.com/">Sublime Text</a> (кросс-платформенный, shareware).
-- <a href="https://atom.io/">Atom</a> (кросс-платформенный, free).
-- <a href="http://www.scintilla.org/">SciTe</a> простой, легкий и очень быстрый (Windows, бесплатный).
-- <a href="http://sourceforge.net/projects/notepad-plus/">Notepad++</a> (Windows, бесплатный).
-- Vim, Emacs. Если умеете их готовить.
+- [Sublime Text](http://www.sublimetext.com/) (кросс-платформенный, shareware).
+- [Visual Studio Code](https://code.visualstudio.com/) (кросс-платформенный, бесплатный).
+- [Atom](https://atom.io/) (кросс-платформенный, бесплатный).
+- [Brackets](http://brackets.io/) (кросс-платформенный, бесплатный).
+- [SciTe](http://www.scintilla.org/) -- простой, лёгкий и очень быстрый (Windows, бесплатный).
+- [Notepad++](https://notepad-plus-plus.org/) (Windows, бесплатный).
+- [Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/). Если умеете их готовить.
 
 ## Мои редакторы
 
