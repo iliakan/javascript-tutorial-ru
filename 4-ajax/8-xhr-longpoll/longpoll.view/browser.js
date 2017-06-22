@@ -34,14 +34,17 @@ function SubscribePane(elem, url) {
     xhr.onreadystatechange = function() {
       if (this.readyState != 4) return;
 
-      console.log(this);
       if (this.status == 200) {
-        showMessage(this.responseText);
+        if (this.responseText) {
+          // сервер может закрыть соединение без ответа при перезагрузке
+          showMessage(this.responseText);
+        }
         subscribe();
         return;
       }
 
-      if (this.status != 404) { // 404 может означать, что сервер перезагружается
+      if (this.status != 502) {
+        // 502 - прокси ждал слишком долго, надо пересоединиться, это не ошибка
         showMessage(this.statusText); // показать ошибку
       }
 
