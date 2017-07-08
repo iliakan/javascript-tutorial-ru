@@ -597,7 +597,6 @@ co(function*() {
 // Загрузить данные пользователя с нашего сервера
 function* fetchUser(url) {
   let userFetch = yield fetch(url);
-
   let user = yield userFetch.json();
 
   return user;
@@ -618,9 +617,7 @@ function sleep(ms) {
 
 // Использовать функции выше для получения аватара пользователя
 function* fetchAvatar(url) {
-
   let user = yield* fetchUser(url);
-
   let githubUser = yield* fetchGithubUser(user);
 
   return githubUser.avatar_url;
@@ -628,7 +625,6 @@ function* fetchAvatar(url) {
 
 // Использовать функции выше для получения и показа аватара
 function* showUserAvatar() {
-
   let avatarUrl;
 
   try {
