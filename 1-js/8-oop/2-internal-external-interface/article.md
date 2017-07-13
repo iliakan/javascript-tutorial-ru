@@ -151,8 +151,8 @@ function CoffeeMachine(power) {
 
   // расчёт времени для кипячения
   function getBoilTime() {
-      return this.waterAmount * WATER_HEAT_CAPACITY * 80 / power; // ошибка!
-    }
+    return this.waterAmount * WATER_HEAT_CAPACITY * 80 / power; // ошибка!
+  }
 */!*
 
   // что делать по окончании процесса
