@@ -127,7 +127,7 @@ alert( dictionary['Welcome']); // Welcome (без перевода)
 
 Аналогично и перехватчик `set` может организовать работу с произвольными свойствами.
 
-# has
+## has
 
 Ловушка `has` срабатывает в операторе `in` и некоторых других случаях, когда проверяется наличие свойства.
 
@@ -162,7 +162,7 @@ alert("BlaBlaBla" in dictionary); // true
 */!*
 ```
 
-# deleteProperty
+## deleteProperty
 
 Ловушка `deleteProperty` по синтаксису аналогична `get/has`.
 
@@ -195,7 +195,7 @@ alert("Hello" in dictionary); // true
 alert("Hello" in proxy); // true
 ```
 
-# enumerate
+## enumerate
 
 Ловушка `enumerate` перехватывает операции `for..in` и `for..of` по объекту.
 
@@ -253,7 +253,7 @@ for(let prop in proxy) {
 1. Сначала получаем список интересующих нас свойств в виде массива.
 2. Метод должен возвратить [итератор](/iterator) по массиву. Встроенный итератор для массива получаем через вызов `props[Symbol.iterator]()`.
 
-# apply
+## apply
 
 Прокси умеет работать не только с обычными объектами, но и с функциями.
 
