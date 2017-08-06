@@ -2,7 +2,7 @@ function Clock(options) {
   this._template = options.template;
 }
 
-Clock.prototype._render = function render() {
+Clock.prototype._render = function() {
   var date = new Date();
 
   var hours = date.getHours();
