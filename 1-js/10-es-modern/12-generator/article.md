@@ -292,7 +292,7 @@ setTimeout(() => generator.next(4), 2000);
 
 ```js run
 function* gen() {
-  let ask1 = yield "Сколько будет 2 + 2?";
+  let ask1 = yield "2 + 2?";
 
   alert(ask1); // 4
 
