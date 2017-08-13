@@ -33,8 +33,8 @@ Hamster.prototype.found = function(something) {
   this.food.push(something);
 };
 
-speedy = new Hamster();
-lazy = new Hamster();
+var speedy = new Hamster();
+var lazy = new Hamster();
 
 speedy.found("яблоко");
 speedy.found("орех");
