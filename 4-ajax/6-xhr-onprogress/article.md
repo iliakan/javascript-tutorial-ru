@@ -15,13 +15,13 @@
 
 Вот полный список событий:
 
-- `loadstart`
-- `progress`
-- `abort`
-- `error`
-- `load`
-- `timeout`
-- `loadend`
+- `onloadstart`
+- `onprogress`
+- `onabort`
+- `onerror`
+- `onload`
+- `ontimeout`
+- `onloadend`
 
 Пример установки обработчиков на стадию закачки:
 
