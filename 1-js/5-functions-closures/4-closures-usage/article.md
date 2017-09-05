@@ -84,8 +84,8 @@ function makeCounter() {
 *!*
   // возвращаемся к функции
   function counter() {
-      return currentCount++;
-    }
+    return currentCount++;
+  }
 */!*
 
   // ...и добавляем ей методы!
