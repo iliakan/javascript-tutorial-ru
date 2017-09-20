@@ -18,6 +18,7 @@ var div = document.getElementById('moving-div');
 var placeHolder = document.createElement('div');
 placeHolder.style.height = div.offsetHeight + 'px';
 // можно и width, но в этом примере это не обязательно
+// из условия: Сделайте это путем создания вспомогательного DIV с теми же width...
 
 // IE || другой браузер
 var computedStyle = div.currentStyle || getComputedStyle(div, '');
