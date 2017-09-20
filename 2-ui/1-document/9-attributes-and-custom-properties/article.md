@@ -157,7 +157,7 @@ document.body.sayHi(); // BODY, выполнилась с правильным t
   // работа с checked через свойство
 */!*
   alert( input.checked ); // false <-- может быть только true/false
-  input.checked = true; // поставить галочку
+  input.checked = true; // поставить галочку (при этом атрибут в элементе не появится)
 </script>
 ```
 ````
