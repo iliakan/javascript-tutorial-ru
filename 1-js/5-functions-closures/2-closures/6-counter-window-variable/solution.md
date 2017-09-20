@@ -17,13 +17,13 @@ var counter = makeCounter();
 var counter2 = makeCounter();
 
 *!*
-alert( counter() ); // ?
-alert( counter() ); // ?
+alert( counter() ); // 1
+alert( counter() ); // 2
 */!*
 
 *!*
-alert( counter2() ); // ?
-alert( counter2() ); // ?
+alert( counter2() ); // 3
+alert( counter2() ); // 4
 */!*
 ```
 
