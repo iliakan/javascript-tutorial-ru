@@ -148,7 +148,7 @@ var ball = document.getElementById('ball');
 
 ball.onmousedown = function(e) {
 
-  var coords = ball.getBoundingClientRect();
+  var coords = getCoords(ball);
 *!*
   var shiftX = e.pageX - coords.left;
   var shiftY = e.pageY - coords.top;
