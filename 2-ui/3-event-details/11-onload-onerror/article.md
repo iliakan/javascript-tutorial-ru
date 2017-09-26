@@ -214,8 +214,8 @@ script.onreadystatechange = function() {
 
     ```js no-beautify
     var img = document.createElement('img');
-    img.onload = function() { alert("Успех "+this.src };
-    img.onerror = function() { alert("Ошибка "+this.src };
+    img.onload = function() { alert("Успех " + this.src) };
+    img.onerror = function() { alert("Ошибка " + this.src) };
     img.src = ...
     ```
 
