@@ -23,6 +23,8 @@ function handle(e) {
   lastTime = Date.now();
 
   area.value += text;
+  
+  area.scrollTop = area.scrollHeight;
 
   if (form.elements[e.type + 'Stop'].checked) {
     e.preventDefault();
