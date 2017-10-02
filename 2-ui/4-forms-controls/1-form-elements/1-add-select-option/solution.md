@@ -11,7 +11,7 @@
 
   // 1)
   var selectedOption = select.options[select.selectedIndex];
-  alert( selectedOption.value );
+  alert( selectedOption.value  + " - " + selectedOption.text );
 
   // 2)
   var newOption = new Option("Classic", "Классика");
