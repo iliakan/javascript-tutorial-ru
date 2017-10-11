@@ -185,7 +185,7 @@ XML-режим включается, когда браузер получает 
 
   <script>
     // для комментария
-    alert( document.body.firstChild.nodeName ); // #comment
+    alert( document.body.firstChild.nodeName ); // #text
     alert( document.body.firstChild.tagName ); // undefined (в IE8- воскл. знак "!")
 
     // для документа
