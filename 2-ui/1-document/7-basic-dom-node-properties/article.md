@@ -180,12 +180,11 @@ XML-режим включается, когда браузер получает 
 Например, сравним `tagName` и `nodeName` на примере узла-комментария и объекта `document`:
 
 ```html run
-<body>
-  <!-- комментарий -->
+<body><!-- комментарий -->
 
   <script>
     // для комментария
-    alert( document.body.firstChild.nodeName ); // #text
+    alert( document.body.firstChild.nodeName ); // #comment
     alert( document.body.firstChild.tagName ); // undefined (в IE8- воскл. знак "!")
 
     // для документа
