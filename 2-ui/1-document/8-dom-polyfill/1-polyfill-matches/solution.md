@@ -3,19 +3,19 @@
 Реализовывать ничего не надо, просто записать нужный метод в `Element.prototype.matches`, если его там нет:
 
 ```js
-(function() {
+(function(e) {
 
   // проверяем поддержку
-  if (!Element.prototype.matches) {
+  if (!e.matches) {
 
     // определяем свойство
-    Element.prototype.matches = Element.prototype.matchesSelector ||
-      Element.prototype.webkitMatchesSelector ||
-      Element.prototype.mozMatchesSelector ||
-      Element.prototype.msMatchesSelector;
+    e.matches = e.matchesSelector ||
+      e.webkitMatchesSelector ||
+      e.mozMatchesSelector ||
+      e.msMatchesSelector;
 
   }
 
-})();
+})(Element.prototype);
 ```
 
