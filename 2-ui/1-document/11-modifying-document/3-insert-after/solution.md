@@ -24,6 +24,14 @@ function insertAfter(elem, refElem) {
 }
 ```
 
+Однако, при таком решении вставить один и тот же элемент несколько раз не получится, поэтому можно вставлять копию элемента:
+
+```js
+function insertAfter(elem, refElem) {
+  return refElem.parentNode.insertBefore(elem.cloneNode(true), refElem.nextSibling);
+}
+```
+
 Если нет `nextSibling`, то второй аргумент `insertBefore` становится `null` и тогда `insertBefore(elem, null)` осуществит вставку в конец, как и требуется.
 
 В решении нет проверки на существование `refElem.parentNode`, поскольку вставка после элемента без родителя -- уже ошибка, пусть она возникнет в функции, это нормально.
