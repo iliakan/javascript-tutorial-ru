@@ -8,7 +8,7 @@ describe("debounce", function() {
   });
 
   it("вызывает функцию не чаще чем раз в ms миллисекунд", function() {
-    var log = '';
+    let log = "";
 
     function f(a) {
       log += a;
@@ -16,25 +16,25 @@ describe("debounce", function() {
 
     f = debounce(f, 1000);
 
-    f(1); // выполнится сразу же
-    f(2); // игнор
+    f(1); // откладываем на 1000
+    f(2); // игнорируем предыдущий и откладываем на 1000
 
     setTimeout(function() {
       f(3)
-    }, 100); // игнор (рановато)
+    }, 1100); // f(2) уже выполнены, откладываем f(3)
     setTimeout(function() {
       f(4)
-    }, 1100); // выполнится (таймаут прошёл)
+    }, 1200); // игнорируем f(3), откладываем f(4)
     setTimeout(function() {
       f(5)
-    }, 1500); // игнор
+    }, 2500); // откладываем f(5)
 
     this.clock.tick(5000);
-    assert.equal(log, "14");
+    assert.equal(log, "245");
   });
 
   it("сохраняет контекст вызова", function() {
-    var obj = {
+    const obj = {
       f: function() {
         assert.equal(this, obj);
       }
@@ -42,6 +42,15 @@ describe("debounce", function() {
 
     obj.f = debounce(obj.f, 1000);
     obj.f("test");
+  });
+
+  it("сохраняет все аргументы", function() {
+    function f(...args) {
+      assert.deepEqual(args, ["первый", "второй"]);
+    }
+
+    f = debounce(f, 1000);
+    f("первый", "второй");
   });
 
 });
