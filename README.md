@@ -1,7 +1,7 @@
 
 # Учебник JavaScript
 
-Этот репозитарий содержит учебник JavaScript [https://learn.javascript.ru](https://learn.javascript.ru).
+Этот репозиторий содержит учебник JavaScript [https://learn.javascript.ru](https://learn.javascript.ru).
 
 Другие языки:
 - Английский: [https://github.com/iliakan/javascript-tutorial-en](https://github.com/iliakan/javascript-tutorial-en).
