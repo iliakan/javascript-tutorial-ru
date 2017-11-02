@@ -6,7 +6,7 @@ function debounce(f, ms) {
   let timer = null;
 
   return function (...args) {
-    const complete = () => {
+    const onComplete = () => {
       f.apply(this, args);
       timer = null;
     }
@@ -15,7 +15,7 @@ function debounce(f, ms) {
       clearTimeout(timer);
     }
 
-    timer = setTimeout(complete, ms);
+    timer = setTimeout(onComplete, ms);
   };
 }
 
