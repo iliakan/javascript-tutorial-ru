@@ -248,7 +248,7 @@ while ((pos = str.indexOf(target, pos + 1)) != -1) {
 */!*
 ```
 
-### Взятие подстроки: substr, substring, slice.
+### Взятие подстроки: substr, substring, slice
 
 В JavaScript существуют целых 3 (!) метода для взятия подстроки, с небольшими отличиями между ними.
 
