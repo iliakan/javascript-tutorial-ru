@@ -246,7 +246,7 @@ CustomError.prototype.constructor = CustomError;
 // наследник
 */!*
 function PropertyError(property) {
-  CustomError.call(this, "Отсутствует свойство " + property)
+  CustomError.call(this, "Ошибка в свойстве " + property)
   this.name = "PropertyError";
 
   this.property = property;
