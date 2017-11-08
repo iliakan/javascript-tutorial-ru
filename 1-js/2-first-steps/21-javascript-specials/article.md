@@ -112,7 +112,7 @@ alert("После этого сообщения будет ошибка")
 
 Простейшие функции для взаимодействия с посетителем в браузере:
 
-["prompt(вопрос[, по_умолчанию])"](https://developer.mozilla.org/en/DOM/window.prompt)
+["prompt(вопрос, [по_умолчанию])"](https://developer.mozilla.org/en/DOM/window.prompt)
 : Задать `вопрос` и возвратить введённую строку, либо `null`, если посетитель нажал "Отмена".
 
 ["confirm(вопрос)"](https://developer.mozilla.org/en/DOM/window.confirm)
