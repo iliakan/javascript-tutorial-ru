@@ -64,7 +64,7 @@ function HoverIntent(options) {
     cTime = Date.now();
   }
   
-  function trackSpeed() {
+  function trackSpeed(event) {
 
     let speed;
     
