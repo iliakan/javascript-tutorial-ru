@@ -70,10 +70,10 @@ alert( Symbol.for("name") == name ); // true
 'use strict';
 
 // создание символа в реестре
-let name = Symbol.for("name");
+let test = Symbol.for("name");
 
 // получение имени символа
-alert( Symbol.keyFor(name) ); // name
+alert( Symbol.keyFor(test) ); // name
 ```
 
 ````warn header="`Symbol.keyFor` возвращает `undefined`, если символ не глобальный"
