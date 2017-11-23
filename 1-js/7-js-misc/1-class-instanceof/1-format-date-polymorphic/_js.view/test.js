@@ -4,7 +4,7 @@ describe("formatDate", function() {
   });
 
   it("читает дату из числа 1234567890 (миллисекунды)", function() {
-    assert.equal(formatDate(1234567890), "14.02.09");
+    assert.equal(formatDate(1234567890), "15.01.70");
   });
 
   it("читает дату из массива вида [гггг, м, д]", function() {
