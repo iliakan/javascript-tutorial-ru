@@ -166,7 +166,7 @@ alert(obj.iterator); // 1
 alert(obj[Symbol.iterator]) // function, символ не конфликтует
 ```
 
-Выше мы использовали системный символ `Symbol.iterator`, поскольку он один из самых широко поддерживаемых. Мы подробно разберём его смысл в главе про [итераторы](/iterator), пока же -- это просто пример символа.
+Выше мы использовали системный символ `Symbol.iterator`, поскольку он один из самых широко используемых. Мы подробно разберём его смысл в главе про [итераторы](/iterator), пока же -- это просто пример символа.
 
 Чтобы получить все символы объекта, есть особый вызов [Object.getOwnPropertySymbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols).
 
