@@ -287,7 +287,7 @@ alert( "S\u0307\u0323".normalize() == "\u1e68" ); // true
 
 ## Полезные методы
 
-Добавлены ряд полезных методов общего назначения:
+Добавлен ряд полезных методов общего назначения:
 
 - [str.includes(s)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) -- проверяет, включает ли одна строка в себя другую, возвращает `true/false`.
 - [str.endsWith(s)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith) -- возвращает `true`, если строка `str` заканчивается подстрокой `s`.
