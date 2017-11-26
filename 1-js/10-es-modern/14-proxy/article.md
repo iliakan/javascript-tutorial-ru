@@ -326,7 +326,7 @@ alert( user.name ); // Ilya
 
 Полный список возможных функций-перехватчиков, которые может задавать `handler`:
 
-- [getPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/has) -- перехватывает обращение к методу `getPrototypeOf`.
+- [getPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/getPrototypeOf) -- перехватывает обращение к методу `getPrototypeOf`.
 - [setPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/setPrototypeOf) -- перехватывает обращение к методу `setPrototypeOf`.
 - [isExtensible](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/isExtensible) -- перехватывает обращение к методу `isExtensible`.
 - [preventExtensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/preventExtensions) -- перехватывает обращение к методу `preventExtensions`.

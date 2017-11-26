@@ -157,7 +157,7 @@ let name = "Вася";
 let user = {
   name,
 *!*
-  // вместо "sayHi: function() {" пишем "sayHi() {"
+  // вместо "sayHi: function() {...}" пишем "sayHi() {...}"
   sayHi() {
     alert(this.name);
   }

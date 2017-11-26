@@ -179,6 +179,16 @@ ball.onmousedown = function(e) {
 ball.ondragstart = function() {
   return false;
 };
+
+function getCoords(elem) {   // кроме IE8-
+  var box = elem.getBoundingClientRect();
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+}
+
+}
 ```
 
 ```online

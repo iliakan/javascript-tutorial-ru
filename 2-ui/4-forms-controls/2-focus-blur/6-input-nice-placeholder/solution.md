@@ -11,7 +11,7 @@ placeholder.onclick = function() {
   input.focus();
 }
 
-// onfocus сработает и вызове input.focus() и при клике на input
+// onfocus сработает и при вызове input.focus() и при клике на input
 input.onfocus = function() {
   if (placeholder.parentNode) {
     placeholder.parentNode.removeChild(placeholder);
