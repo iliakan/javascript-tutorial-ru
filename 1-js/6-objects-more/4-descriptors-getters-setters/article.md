@@ -337,7 +337,7 @@ alert( pete.age );      // и возраст
 
     *!*
     alert( Object.keys(obj) ); // a,b
-    alert( Object.getOwnPropertyNames(obj) ); // a, internal, b
+    alert( Object.getOwnPropertyNames(obj) ); // a, b, internal
     */!*
     ```
 
