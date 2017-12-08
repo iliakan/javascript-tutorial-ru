@@ -1,10 +1,10 @@
 # Async/await
 
-There's a special syntax to work with promises in a more comfort fashion, called "async/await". It's surprisingly easy to understand and use.
+Для более комфортной работы с промисами существует специальный синтаксис — "async/await". Он удивительно прост в понимании и использовании.
 
-## Async functions
+## Асинхронные функции
 
-Let's start with the `async` keyword. It can be placed before function, like this:
+Начнём с ключевого слова `async`. Его можно написать перед функцией, вот так:
 
 ```js
 async function f() {
@@ -12,9 +12,9 @@ async function f() {
 }
 ```
 
-The word "async" before a function means one simple thing: a function always returns a promise. If the code has `return <non-promise>` in it, then JavaScript automatically wraps it into a resolved promise with that value.
+Слово "async" перед функцией говорит о следующем: данная функция всегда возвращает промис. Если в коде есть `return <не-промис>`, то JavaScript автоматически завернёт возвращаемое значение в промис, разрешающийся этим значением.
 
-For instance, the code above returns a resolved promise with the result of `1`, let's test it:
+Так, например, вышеупомянутый код вернёт промис, разрешающийся с результатом `1`. Проверим это:
 
 ```js run
 async function f() {
@@ -24,7 +24,7 @@ async function f() {
 f().then(alert); // 1
 ```
 
-...We could explicitly return a promise, that would be the same:
+...Мы могли вернуть промис и явным образом, что было бы равносильно:
 
 ```js run
 async function f() {
@@ -34,56 +34,57 @@ async function f() {
 f().then(alert); // 1
 ```
 
-So, `async` ensures that the function returns a promise, wraps non-promises in it. Simple enough, right? But not only that. There's another keyword `await` that works only inside `async` functions, and it's pretty cool.
+В общем, `async` делает так, что функция всегда возвращает промис (если возвращается обычное значение, то оно оборачивается в промис). Просто, не так ли? Но есть и другое ключевое слово — `await` — оно работает только внутри `async`-функций. И оно просто шикарно!
 
 ## Await
 
-The syntax:
+Синтаксис:
 
 ```js
-// works only inside async functions
+// работает только внутри async-функций
 let value = await promise;
 ```
 
-The keyword `await` makes JavaScript wait until that promise settles and returns its result.
+Ключевое слово `await` заставляет JavaScript ждать, пока промис завершится с каким-либо результатом.
 
-Here's example with a promise that resolves in 1 second:
+Пример промиса, разрешающегося через 1 секунду:
 ```js run
 async function f() {
 
   let promise = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("done!"), 1000)
+    setTimeout(() => resolve("готово!"), 1000)
   });
 
 *!*
-  let result = await promise; // wait till the promise resolves (*)
+  let result = await promise; // ждёт разрешения промиса (*)
 */!*
 
-  alert(result); // "done!"
+  alert(result); // "готово!"
 }
 
 f();
 ```
 
-The function execution "pauses" at the line `(*)` and resumes when the promise settles, with `result` becoming its result. So the code above shows "done!" in one second.
+Выполнение функции приостанавливается на строке `(*)`, затем продолжается, когда промис разрешается. При этом `result` принимает значение результата. Таким образом, наш код показывает "готово!" спустя одну секунду.
 
-Let's emphasize: `await` literally makes JavaScript wait until the promise settles, and then go on with the result. That doesn't cost any CPU resources, because the engine can do other jobs meanwhile: execute other scripts, handle events etc.
+Подчернём, что `await` действительно делает так, что JavaScript ждёт разрешения промиса, а потом продолжает, используя его результат. При этом ресурсы процессора не расходуются, поскольку в это время движок может производить другую работу: исполнять другие скрипты, обрабатывать события и т.д.
 
-It's just a more elegant syntax of getting the promise result than `promise.then`, easier to read and write.
 
-````warn header="Can't use `await` in regular functions"
-If we try to use `await` in non-async function, that would be a syntax error:
+Это прсто более элегантный способ получения результата промиса, чем `promise.then`. Такой код проще писать и читать.
+
+````warn header="В обычных функциях использовать `await` нельзя"
+Если попытаемся использовать `await` в функциях, объявленных без `async`, то получим синтаксическую ошибку:
 
 ```js run
 function f() {
   let promise = Promise.resolve(1);
 *!*
-  let result = await promise; // Syntax error
+  let result = await promise; // Синтаксическая ошибка
 */!*
 }
 ```
 
-We can get such error in case if we forget to put `async` before a function. As said, `await` only works inside `async function`.
+Если забыть поставить `async` перед функцией, то будет такая ошибка. Как уже сказано, `await` работает только внутри `async function`.
 ````
 
 Let's take `showAvatar()` example from the chapter <info:promise-chaining> and rewrite it using `async/await`:
