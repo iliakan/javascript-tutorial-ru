@@ -268,17 +268,16 @@ f().catch(alert); // TypeError: failed to fetch // (*)
 
 <!-- TODO: детавтологизировать -->
 
+Но в глобальной области кода, когда мы находимся вне какой бы то ни было `async`-функции, синтаксис не позволяет использовать `await`, поэтому нормальной практикой считается пользоваться `.then/catch` для получения конечного результата (или для финальной обработки ошибки).
 
-But at the top level of the code, when we're outside of any `async` function, we're syntactically unable to use `await`, so it's a normal practice to add `.then/catch` to handle the final result or falling-through errors.
-
-Like in the line `(*)` of the example above.
+Как, например, в строке `(*)` из предыдущего примера.
 ```
 
-````smart header="`async/await` works well with `Promise.all`"
-When we need to wait for multiple promises, we can wrap them in `Promise.all` and then `await`:
+````smart header="`async/await` хорошо рабоатет с `Promise.all`"
+Когда нужно дождаться нескольких промисов, можно завернуть их в `Promise.all` и использовать `await`:
 
 ```js
-// wait for the array of results
+// ждём массив результатов
 let results = await Promise.all([
   fetch(url1),
   fetch(url2),
@@ -286,22 +285,22 @@ let results = await Promise.all([
 ]);
 ```
 
-In case of an error, it propagates as usual: from the failed promise to `Promise.all`, and then becomes an exception that we can catch using `try..catch` around the call.
+Ошибка, в случае возникновения, распространяется, как обычно: от упавшего промиса к `Promise.all` — и далее она превращается в исключение, которое можно перехватить с помощью `try..catch`, обёрнутого вокруг вызова.
 
 ````
 
-## Summary
+## Итого
 
-The `async` keyword before a function has two effects:
+Ключевое слово `async` перед функцией служит двум целям:
 
-1. Makes it always return a promise.
-2. Allows to use `await` in it.
+1. Заставить функцию всегда возвращать промис.
+2. Позволяет использовать `await`.
 
-The `await` keyword before a promise makes JavaScript wait until that promise settles, and then:
+Ключевое слово `await` перед промисом действует так, что JavaScript ожидает завершения промиса, а затем:
 
-1. If it's an error, the exception is generated, same as if `throw error` were called at that very place.
-2. Otherwise, it returns the result, so we can assign it to a value.
+1. Если есть ошибка, генерируется исключение, как если бы в этом месте было вызвано `throw error`.
+2. Иначе, возвращается результат, который можно присвоить переменной или использовать в выражении.
 
-Together they provide a great framework to write asynchronous code that is easy both to read and write.
+Вместе эти два ключевых слова создают замечательный фреймворк, позволяющий писать хорошо читаемый и поддерживаемый асинхронный код.
 
-With `async/await` we rarely need to write `promise.then/catch`, but we still shouldn't forget that they are based on promises, because sometimes (e.g. in the outermost scope) we have to use these methods. Also `Promise.all` is a nice thing to wait for many tasks simultaneously.
+Нам редко нужно использовать `promise.then/catch` с `async/await`, но не стоит забывать, что данный подход основан на промисах, поэтому иногда (чаще всего, в глобальной области) нам приходится использовать эти методы. Также, `Promise.all()` — это хороший способ дождаться завершения нескольких одновременных задач.
