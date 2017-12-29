@@ -398,6 +398,6 @@ alert( keys ); // name, age
 - `indexOf/lastIndexOf` -- возвращают позицию элемента в массиве (не поддерживается в IE8-).
 
 Дополнительно:
-- `Object.keys(arr)` возвращает массив свойств объекта.
+- `Object.keys(obj)` возвращает массив свойств объекта.
 
 Изученных нами методов достаточно в 95% случаях, но существуют и другие. Для знакомства с ними рекомендуется заглянуть в справочник <a href="http://javascript.ru/Array">Array</a> и [Array в Mozilla Developer Network](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array).
