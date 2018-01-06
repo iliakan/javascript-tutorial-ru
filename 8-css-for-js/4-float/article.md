@@ -107,7 +107,6 @@ HTML будет такой:
 ..То есть, `div.left-picture` включает в себя картинку и заголовок к ней. Добавим стиль с `float`:
 
 ```css
-/*+ no-beautify */
 .left-picture {
 *!*
   float: left;
@@ -260,7 +259,6 @@ h2 {
 Поэтому, если это допустимо, то установка `float` контейнеру всё исправит:
 
 ```css
-/*+ no-beautify */
 .hero {
   background: #D2B48C;
   border: 1px solid red;
@@ -306,7 +304,6 @@ h2 {
 Чтобы не добавлять в HTML-код лишний элемент, можно задать его через `:after`.
 
 ```css
-/*+ no-beautify */
 .clearfix:after {
   content: "."; /* добавить содержимое: "." */
   display: block;  /* сделать блоком, т.к. inline не может иметь clear */
@@ -323,7 +320,6 @@ h2 {
 Если добавить родителю `overflow: hidden` или `overflow: auto`, то всё станет хорошо.
 
 ```css
-/*+ no-beautify */
 .hero {
 *!*
   overflow: auto;
