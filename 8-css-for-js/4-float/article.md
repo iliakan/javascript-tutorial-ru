@@ -66,9 +66,11 @@ float: left | right | none | inherit;
 1. Элемент `IMG` вынимается из <strike>документа</strike> потока. Иначе говоря, последующие блоки начинают вести себя так, как будто его нет, и заполняют освободившееся место (изображение для наглядности полупрозрачно):
 
 [iframe src="winnie-nofloat-1" height=250 border=1 link edit]
+
 2. Элемент `IMG` сдвигается максимально вправо(при `float:right`):
 
 [iframe src="winnie-nofloat-2" height=250 border=1 link edit]
+
 3. Строки, в отличие от блочных элементов, "чувствуют" `float` и уступают ему место, обтекая картинку слева:
 
 [iframe src="winnie-nofloat-3" height=250 border=1 link edit]
