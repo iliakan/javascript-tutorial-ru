@@ -25,7 +25,7 @@
 Например:
 
   - директория `2-ui/3-event-details` с файлом `index.md` - это раздел сайта "События в деталях", он будет доступен по URL `/event-details`.
-  - директория `2-ui/3-event-details/6-drag-and-drop` с файлом `article.md` содержит статью "Мышь: Drag'n'Drop`, доступную по URL `/drag-and-drop`.
+  - директория `2-ui/3-event-details/6-drag-and-drop` с файлом `article.md` содержит статью "Мышь: Drag'n'Drop, доступную по URL `/drag-and-drop`.
   - директория `2-ui/3-event-details/6-drag-and-drop/slider` с файлом `task.md` содержит задачу с названием "Слайдер", доступную по адресу `/task/slider`.
 
 <blockquote>
