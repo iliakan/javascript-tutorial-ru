@@ -257,7 +257,7 @@ ko.applyBindings(user, document.body);
 
 Есть другие библиотеки "продвинутой шаблонизации", которые добавляют свои возможности по работе с DOM, например:
 
-- [Ractive.JS](http://www.ractivejs.org)
+- [Ractive.JS](https://ractive.js.org/)
 - [Rivets.JS](http://www.rivetsjs.com/)
 
 Подобная шаблонная система является частью многих фреймворков, например:
