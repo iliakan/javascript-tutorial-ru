@@ -128,13 +128,13 @@ var collator = new Intl.Collator(undefined, {
 alert( collator.compare("ЁжиК", "ёжик") ); // 0, одинаковые
 ```
 
-## Даты, Intl.DateFormatter [#intl-dateformatter]
+## Даты, Intl.DateTimeFormat [#intl-dateformatter]
 
 Синтаксис:
 
 ```js
 // создание
-var formatter = new Intl.DateFormatter([locales, [options]])
+var formatter = new Intl.DateTimeFormat([locales, [options]])
 ```
 
 Первый аргумент -- такой же, как и в `Collator`, а в объекте `options` мы можем определить, какие именно части даты показывать (часы, месяц, год...) и в каком формате.
