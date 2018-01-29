@@ -128,7 +128,7 @@ var collator = new Intl.Collator(undefined, {
 alert( collator.compare("ЁжиК", "ёжик") ); // 0, одинаковые
 ```
 
-## Даты, Intl.DateTimeFormat [#intl-dateformatter]
+## Даты, Intl.DateTimeFormat [#intl-datetimeformat]
 
 Синтаксис:
 
