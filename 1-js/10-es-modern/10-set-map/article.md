@@ -112,12 +112,12 @@ for(let fruit of recipeMap.keys()) {
   alert(fruit); // огурцов, помидоров, сметаны
 }
 
-// цикл по значениям [ключ,значение]
+// цикл по значениям
 for(let amount of recipeMap.values()) {
   alert(amount); // 500 гр, 350 гр, 50 гр
 }
 
-// цикл по записям
+// цикл по записям [ключ,значение]
 for(let entry of recipeMap) { // то же что и recipeMap.entries()
   alert(entry); // огурцов,500 гр , и т.д., массивы по 2 значения
 }
