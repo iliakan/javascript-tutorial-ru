@@ -2,8 +2,6 @@
 
 Элемент `iframe` является обычным узлом DOM, как и любой другой. Существенное отличие -- в том, что с ним связан объект `window` внутреннего окна. Он доступен по ссылке `iframe.contentWindow`.
 
-[cut]
-
 Таким образом, `iframe.contentWindow.document` будет внутренним документом, `iframe.contentWindow.document.body` -- его `<body>` и так далее.
 
 ```smart header="Когда-то..."

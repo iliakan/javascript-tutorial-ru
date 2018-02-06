@@ -7,8 +7,6 @@
 1. Он позволяет выделить часть совпадения в отдельный элемент массива при поиске через [String#match](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/match) или [RegExp#exec](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
 2. Если поставить квантификатор после скобки, то он применится *ко всей скобке*, а не всего лишь к одному символу.
 
-[cut]
-
 ## Пример
 
 В примере ниже, шаблон `pattern:(go)+` находит один или более повторяющихся `pattern:'go'`:

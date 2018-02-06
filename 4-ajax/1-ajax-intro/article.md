@@ -4,8 +4,6 @@
 
 Она будет полезна для понимания, что такое AJAX и с чем его едят.
 
-[cut]
-
 ## Что такое AJAX?
 
 AJAX (аббревиатура от "<strong>A</strong>synchronous <strong>J</strong>avascript <strong>A</strong>nd <strong>X</strong>ml") -- технология обращения к серверу без перезагрузки страницы.

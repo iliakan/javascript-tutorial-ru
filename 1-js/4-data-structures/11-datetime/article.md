@@ -2,8 +2,6 @@
 
 Для работы с датой и временем в JavaScript используются объекты [Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/).
 
-[cut]
-
 ## Создание
 
 Для создания нового объекта типа `Date` используется один из синтаксисов:

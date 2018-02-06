@@ -4,8 +4,6 @@
 
 ...Ну а для их поддержки в IE8- просто подключите библиотеку [ES5-shim](https://github.com/kriskowal/es5-shim).
 
-[cut]
-
 ## forEach
 
 Метод ["arr.forEach(callback[, thisArg])"](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/forEach) используется для перебора массива.
