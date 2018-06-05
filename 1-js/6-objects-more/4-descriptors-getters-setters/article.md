@@ -265,8 +265,15 @@ function User(name, birthday) {
   // age будет высчитывать возраст по birthday
   Object.defineProperty(this, "age", {
     get: function() {
-      var todayYear = new Date().getFullYear();
-      return todayYear - this.birthday.getFullYear();
+      var today = new Date();
+      var yearDelta = today.getFullYear() - this.birthday.getFullYear();
+
+      if (today.getMonth() > this.birthday.getMonth() ||
+        (today.getMonth() === this.birthday.getMonth() && today.getDate() >= this.birthday.getDate())) {
+        return yearDelta;
+      }
+
+      return yearDelta - 1;      
     }
   });
 */!*
