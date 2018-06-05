@@ -280,7 +280,7 @@ function Animal(name) {
 
 // Методы хранятся в прототипе
 Animal.prototype.run = function() {
-  alert(this.name + " бежит!")
+  alert(this.name + " бежит!");
 }
 
 *!*
@@ -322,7 +322,7 @@ rabbit.run();
 ```js
 function Animal() {
   this.walk = function() {
-    alert('walk')
+    alert('walk');
   };
   alert( 'Му-у-у!' );
 }
