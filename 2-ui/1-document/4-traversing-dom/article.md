@@ -118,7 +118,7 @@ elem.childNodes[0] === elem.firstChild
 elem.childNodes[elem.childNodes.length - 1] === elem.lastChild
 ```
 
-## Коллекции -- не массивы
+## Коллекции -- не массивы (depricated)
 
 DOM-коллекции, такие как `childNodes` и другие, которые мы увидим далее, не являются JavaScript-массивами.
 
@@ -132,6 +132,17 @@ elems.forEach(function(elem) { // нет такого метода!
 */!*
   /* ... */
 });
+```
+
+Для Chrome 59.0.3071
+
+```for(let key in document.documentElement.childNodes.__proto__) { alert(key) }
+// length
+// item
+// entries
+// forEach
+// keys
+// values
 ```
 
 Именно поэтому `childNodes` и называют "коллекция" или "псевдомассив".
