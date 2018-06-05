@@ -372,7 +372,7 @@ function isPrime(n) {
 
 Большинство есть на английском, сообщите мне, если найдёте хороший перевод:
 
-- [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
+- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 - [jQuery JavaScript Style Guide](http://contribute.jquery.org/style-guide/js/)
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Idiomatic.JS](https://github.com/rwaldron/idiomatic.js) (есть [перевод](https://github.com/rwaldron/idiomatic.js/tree/master/translations/ru_RU))
