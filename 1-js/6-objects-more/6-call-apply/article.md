@@ -240,7 +240,7 @@ f.call(null);
 
 Без `use strict`:
 
-```js run
+```js run no-strict
 function f() {
   alert( this ); // window
 }
@@ -267,7 +267,7 @@ f.call(null);
     ```
 
 - В `new`:
-    
+
     ```js
     new func() // this = {} (новый объект)
     ```
@@ -277,4 +277,3 @@ f.call(null);
     func.apply(context, args) // this = context (явная передача)
     func.call(context, arg1, arg2, ...)
     ```
-
