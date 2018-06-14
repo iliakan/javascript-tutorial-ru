@@ -15,8 +15,13 @@ importance: 5
 
 function ask(question, answer, ok, fail) {
   var result = prompt(question, '');
-  if (result.toLowerCase() == answer.toLowerCase()) ok();
-  else fail();
+
+  // result == null - если нажать отмену ввода в prompt
+  // Помним особенность Safari 5.1+ с возвратом '', да?
+  if (!(result == null || result == '') && result.toLowerCase() == answer.toLowerCase())
+    ok();
+  else
+    fail();
 }
 
 var user = {
