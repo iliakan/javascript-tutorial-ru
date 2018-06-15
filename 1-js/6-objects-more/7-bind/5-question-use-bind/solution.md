@@ -23,7 +23,7 @@ var user = {
   password: '12345',
 
   loginOk: function() {
-    alert( this.login + ' вошёл в сайт' );
+    alert( this.login + ' вошёл на сайт' );
   },
 
   loginFail: function() {
@@ -87,7 +87,7 @@ var user = {
   password: '12345',
 
   loginOk: function() {
-    alert( this.login + ' вошёл в сайт' );
+    alert( this.login + ' вошёл на сайт' );
   },
 
   loginFail: function() {

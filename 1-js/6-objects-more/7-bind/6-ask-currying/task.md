@@ -31,7 +31,7 @@ var user = {
 
   // метод для вызова из ask
   loginDone: function(result) {
-    alert( this.login + (result ? ' вошёл в сайт' : ' ошибка входа') );
+    alert( this.login + (result ? ' вошёл на сайт' : ' ошибка входа') );
   },
 
   checkPassword: function() {
