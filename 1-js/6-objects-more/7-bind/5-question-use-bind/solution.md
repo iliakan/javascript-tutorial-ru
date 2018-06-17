@@ -9,8 +9,13 @@
 
 function ask(question, answer, ok, fail) {
   var result = prompt(question, '');
-  if (result.toLowerCase() == answer.toLowerCase()) ok();
-  else fail();
+
+  // result == null - если нажать отмену ввода в prompt
+  // Помним особенность Safari 5.1+ с возвратом '', да?
+  if (!(result == null || result == '') && result.toLowerCase() == answer.toLowerCase())
+    ok();
+  else
+    fail();
 }
 
 var user = {
@@ -18,7 +23,7 @@ var user = {
   password: '12345',
 
   loginOk: function() {
-    alert( this.login + ' вошёл в сайт' );
+    alert( this.login + ' вошёл на сайт' );
   },
 
   loginFail: function() {
@@ -68,8 +73,13 @@ vasya.checkPassword(); // упс будет ошибка, ведь в коде �
 
 function ask(question, answer, ok, fail) {
   var result = prompt(question, '');
-  if (result.toLowerCase() == answer.toLowerCase()) ok();
-  else fail();
+
+  // result == null - если нажать отмену ввода в prompt
+  // Помним особенность Safari 5.1+ с возвратом '', да?
+  if (!(result == null || result == '') && result.toLowerCase() == answer.toLowerCase())
+    ok();
+  else
+    fail();
 }
 
 var user = {
@@ -77,7 +87,7 @@ var user = {
   password: '12345',
 
   loginOk: function() {
-    alert( this.login + ' вошёл в сайт' );
+    alert( this.login + ' вошёл на сайт' );
   },
 
   loginFail: function() {

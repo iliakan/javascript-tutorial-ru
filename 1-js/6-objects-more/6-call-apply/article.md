@@ -227,7 +227,7 @@ alert( Math.max.apply(null, arr) ); // 5
 В современном стандарте `call/apply` передают `this` "как есть". А в старом, без `use strict`, при указании первого аргумента `null` или `undefined` в `call/apply`, функция получает `this = window`, например:
 
 Современный стандарт:
-```js run
+```js run no-strict
 function f() {
   "use strict";
 *!*
