@@ -270,9 +270,9 @@ function f() {
 
 - Для IE есть параметр коммандной строки:
 
-        ```
-        "C:\Program Files\Internet Explorer\iexplore.exe" -extoff
-        ```
+```
+"C:\Program Files\Internet Explorer\iexplore.exe" -extoff
+```
 
     Кроме того необходимо отключить сторонние расширения в свойствах IE.
 
@@ -280,9 +280,9 @@ function f() {
 ![](ie9_disable2.png)
 - Firefox необходимо запускать с чистым профилем. Используйте следующую команду для запуска менеджера профилей и создания чистого пустого профиля:
 
-        ```
-        firefox --profilemanager
-        ```
+```
+firefox --profilemanager
+```
 
 ## Инструменты
 

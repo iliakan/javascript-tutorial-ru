@@ -72,7 +72,7 @@ Rabbit.prototype.jump = function() {
 var rabbit = new Rabbit('Кроль');
 ```
 
-Для того, чтобы наследование работало, объект `rabbit = new Rabbit` должен использовать свойства и методы из своего прототипа `Rabbit.prototype`, а если их там нет, то -- свойства и метода родителя, которые хранятся в `Animal.prototype`.
+Для того, чтобы наследование работало, объект `rabbit = new Rabbit` должен использовать свойства и методы из своего прототипа `Rabbit.prototype`, а если их там нет, то -- свойства и методы родителя, которые хранятся в `Animal.prototype`.
 
 Если ещё короче -- порядок поиска свойств и методов должен быть таким: `rabbit -> Rabbit.prototype -> Animal.prototype`, по аналогии с тем, как это сделано для объектов и массивов.
 
@@ -280,7 +280,7 @@ function Animal(name) {
 
 // Методы хранятся в прототипе
 Animal.prototype.run = function() {
-  alert(this.name + " бежит!")
+  alert(this.name + " бежит!");
 }
 
 *!*
@@ -322,7 +322,7 @@ rabbit.run();
 ```js
 function Animal() {
   this.walk = function() {
-    alert('walk')
+    alert('walk');
   };
   alert( 'Му-у-у!' );
 }

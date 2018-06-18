@@ -3,8 +3,8 @@ describe("formatDate", function() {
     assert.equal(formatDate('2011-10-02'), "02.10.11");
   });
 
-  it("читает дату из числа 1234567890 (миллисекунды)", function() {
-    assert.equal(formatDate(1234567890), "15.01.70");
+  it("читает дату из числа 1234567890 (секунды)", function() {
+    assert.equal(formatDate(1234567890), "14.02.09");
   });
 
   it("читает дату из массива вида [гггг, м, д]", function() {
