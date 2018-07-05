@@ -9,7 +9,7 @@
 
 Синтаксис метода `fetch`:
 ```js
-let promise = fetch(url[, options]);
+let promise = fetch(url, [options]);
 ```
 
 - `url` -- URL, на который сделать запрос,
