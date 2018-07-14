@@ -1,34 +1,39 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
-document.getElementById('coords-show-mark').onclick = function() {
-var elem = document.getElementById("coords-show-mark");
+let elem = document.getElementById('coords-show-mark');
 
-function createMessageUnder(elem, text) {
-  // получить координаты
-  var coords = elem.getBoundingClientRect();
+// no elem in ebook mode
+if (elem) {
+  elem.onclick = function() {
+    var elem = document.getElementById("coords-show-mark");
 
-  // создать элемент для сообщения
-  var message = document.createElement('div');
-  // стиль лучше задавать классом
-  message.style.cssText = "position:fixed; color: red";
+    function createMessageUnder(elem, text) {
+      // получить координаты
+      var coords = elem.getBoundingClientRect();
 
-  // к координатам обязательно добавляем "px"!
-  message.style.left = coords.left + "px";
-  message.style.top = coords.bottom + "px";
+      // создать элемент для сообщения
+      var message = document.createElement('div');
+      // стиль лучше задавать классом
+      message.style.cssText = "position:fixed; color: red";
 
-  message.innerHTML = text;
+      // к координатам обязательно добавляем "px"!
+      message.style.left = coords.left + "px";
+      message.style.top = coords.bottom + "px";
 
-  return message;
-}
+      message.innerHTML = text;
 
-// Использование
-// добавить на 5 сек в документ
-var message = createMessageUnder(elem, 'Привет, мир!');
-document.body.appendChild(message);
-setTimeout(function() {
-  document.body.removeChild(message);
-}, 5000);
+      return message;
+    }
+
+    // Использование
+    // добавить на 5 сек в документ
+    var message = createMessageUnder(elem, 'Привет, мир!');
+    document.body.appendChild(message);
+    setTimeout(function() {
+      document.body.removeChild(message);
+    }, 5000);
+  }
 }
 
 });
