@@ -351,7 +351,6 @@ boat.onclick = function() {
 
 <style>
 *!*
-  /* Современные браузеры, кроме Chrome, Opera, Safari */
   @keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
     from {
       left: 0px;               /* от: left: 0px */
@@ -362,15 +361,6 @@ boat.onclick = function() {
   }
 */!*
 
-  /* Префикс для Chrome, Opera, Safari */
-  @-webkit-keyframes go-left-right {
-    from {
-      left: 0px;
-    }
-    to {
-      left: calc(100% - 50px);
-    }
-  }
 
   .progress {
 *!*
@@ -379,7 +369,6 @@ boat.onclick = function() {
     /* количество раз: бесконечное (infinite) */
     /* менять направление анимации каждый раз (alternate) */
     animation: go-left-right 3s infinite alternate;
-    -webkit-animation: go-left-right 3s infinite alternate;
 */!*
 
     position: relative;
