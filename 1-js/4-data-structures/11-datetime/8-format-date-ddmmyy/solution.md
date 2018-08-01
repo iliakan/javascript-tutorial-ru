@@ -42,3 +42,17 @@ var d = new Date(2014, 0, 30); // 30 Янв 2014
 alert( formatDate(d) ); // '30.01.14'
 ```
 
+Альтернативное решение:
+```js run
+function formatDate(date){
+  var options = {
+    year: '2-digit',
+    month: 'numeric',
+    day: 'numeric',
+  };
+      
+  return date.toLocaleString("ru", options);
+}
+var d = new Date(2014, 0, 30); // 30 Янв 2014
+alert( formatDate(d) ); // '30.01.14'
+```
