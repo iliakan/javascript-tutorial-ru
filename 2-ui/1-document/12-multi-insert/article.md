@@ -75,8 +75,6 @@ ul.innerHTML += "<li>1</li><li>2</li>...";
 
 Метод [insertAdjacentHTML](https://developer.mozilla.org/en/DOM/element.insertAdjacentHTML) позволяет вставлять произвольный HTML в любое место документа, в том числе *и между узлами*!
 
-Он поддерживается всеми браузерами, кроме Firefox меньше версии 8, ну а там его можно эмулировать.
-
 Синтаксис:
 
 ```js
@@ -113,9 +111,8 @@ elem.insertAdjacentHTML(where, html);
 </script>
 ```
 
-Единственный недостаток этого метода -- он не работает в Firefox до версии 8. Но его можно легко добавить, используя [полифилл insertAdjacentHTML для Firefox](insertAdjacentFF.js).
 
-У этого метода есть "близнецы-братья", которые поддерживаются везде, кроме Firefox, но в него они добавляются тем же полифиллом:
+У этого метода есть "близнецы-братья":
 
 - [elem.insertAdjacentElement(where, newElem)](http://help.dottoro.com/ljbreokf.php) -- вставляет в произвольное место не строку HTML, а элемент `newElem`.
 - [elem.insertAdjacentText(where, text)](http://help.dottoro.com/ljrsluxu.php) -- создаёт текстовый узел из строки `text` и вставляет его в указанное место относительно `elem`.
@@ -231,10 +228,8 @@ ul.appendChild(fragment); // вместо фрагмента вставятся 
 
 - Семейство методов для вставки HTML/элемента/текста в произвольное место документа:
     - `elem.insertAdjacentHTML(where, html)`
-    - `elem.insertAdjacentElement(where, node)`
+    - `elem.insertAdjacentElement(where, element)`
     - `elem.insertAdjacentText(where, text)`
-
-    Два последних метода не поддерживаются в Firefox, на момент написания текста, но есть небольшой полифилл  [insertAdjacentFF.js](insertAdjacentFF.js), который добавляет их. Конечно, он нужен только для Firefox.
 
 - `DocumentFragment` позволяет минимизировать количество вставок в большой живой DOM. Эта оптимизация особо эффективна в старых браузерах, в новых эффект от неё меньше или наоборот отрицательный.
 
