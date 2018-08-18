@@ -171,7 +171,7 @@ num = 5; // error: num is not defined
 
 Обратим внимание, директиву `use strict` нужно ставить до кода, иначе она не сработает:
 
-```js run
+```js
 var something;
 
 "use strict"; // слишком поздно
