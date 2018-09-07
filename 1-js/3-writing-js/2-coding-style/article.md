@@ -388,7 +388,6 @@ function isPrime(n) {
 
 - [JSLint](http://www.jslint.com/) -- проверяет код на соответствие [стилю JSLint](http://www.jslint.com/lint.html), в онлайн-интерфейсе вверху можно ввести код, а внизу различные настройки проверки, чтобы сделать её более мягкой.
 - [JSHint](http://www.jshint.com/) -- вариант JSLint с большим количеством настроек.
-- [Closure Linter](https://developers.google.com/closure/utilities/) -- проверка на соответствие [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html).
 
 В частности, JSLint и JSHint интегрированы с большинством редакторов, они гибко настраиваются под нужный стиль и совершенно незаметно улучшают разработку, подсказывая, где и что поправить.
 
