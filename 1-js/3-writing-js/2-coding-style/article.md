@@ -374,7 +374,7 @@ function isPrime(n) {
 
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 - [jQuery JavaScript Style Guide](http://contribute.jquery.org/style-guide/js/)
-- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)(есть [перевод](https://github.com/uprock/javascript)
 - [Idiomatic.JS](https://github.com/rwaldron/idiomatic.js) (есть [перевод](https://github.com/rwaldron/idiomatic.js/tree/master/translations/ru_RU))
 - [Dojo Style Guide](https://dojotoolkit.org/reference-guide/1.10/developer/styleguide.html)
 
