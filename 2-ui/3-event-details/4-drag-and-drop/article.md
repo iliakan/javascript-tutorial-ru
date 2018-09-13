@@ -186,7 +186,6 @@ function getCoords(elem) {   // кроме IE8-
   };
 }
 
-}
 ```
 
 ```online
