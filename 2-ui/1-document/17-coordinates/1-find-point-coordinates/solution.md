@@ -13,7 +13,7 @@ var coords2 = [coords.right, coords.bottom];
 
 # Левый-верхний угол внутри
 
-Этот угол отстоит от наружных границ на размер рамки, который доступен через `clientLeft/clientTop`:
+Этот угол отстоёт от наружных границ на размер рамки, который доступен через `clientLeft/clientTop`:
 
 ```js
 var coords3 = [coords.left + field.clientLeft, coords.top + field.clientTop];
