@@ -39,7 +39,7 @@ createTree(container, data); // создаёт
 
 Результат (дерево):
 
-[iframe border=1 src="solution"]
+[iframe border=1 src="build-tree-dom"]
 
 Выберите один из двух способов решения этой задачи:
 
