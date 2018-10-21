@@ -23,7 +23,7 @@ importance: 4
 
 ```css
 body {
-  font: 14px/1.5 Georgia, serif;
+  font: 14px/1.5 serif;
 }
 ```
 
@@ -36,4 +36,3 @@ body {
 Результат:
 
 [iframe src="solution" border=1 link]
-
