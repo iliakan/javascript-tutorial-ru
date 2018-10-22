@@ -44,7 +44,7 @@
   div {
     border: 1px solid blue;
     margin: 2em;
-    font: .8em/1.25 Arial, sans-serif;
+    font: .8em/1.25 sans-serif;
   }
 
   h2 {

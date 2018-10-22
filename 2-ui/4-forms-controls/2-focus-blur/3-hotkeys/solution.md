@@ -9,7 +9,7 @@
 #area {
   height: 150px;
   width: 400px;
-  font-family: arial;
+  font-family: sans-serif;
   font-size: 14px;
 }
 ```
@@ -96,4 +96,3 @@ function cancel() {
   view.style.display = 'block';
 }
 ```
-
