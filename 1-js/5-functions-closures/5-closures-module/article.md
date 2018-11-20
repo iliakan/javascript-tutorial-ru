@@ -78,7 +78,7 @@ showMessage();
   // выводим сообщение
   showMessage();
 
-})();
+}());
 ```
 
 [edit src="hello-module"]
