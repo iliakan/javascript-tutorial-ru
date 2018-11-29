@@ -14,7 +14,7 @@ var re = /#([a-f0-9]{3}){1,2}/gi;
 
 var str = "color: #3f3; background-color: #AA00ef; and: #abcd";
 
-alert( str.match(re) ); // #3f3 #AA0ef #abc
+alert( str.match(re) ); // #3f3 #AA00ef #abc
 ```
 
 В последнем выражении `subject:#abcd` было найдено совпадение `match:#abc`. Чтобы этого не происходило, добавим в конец `pattern:\b`:
@@ -24,6 +24,6 @@ var re = /#([a-f0-9]{3}){1,2}\b/gi;
 
 var str = "color: #3f3; background-color: #AA00ef; and: #abcd";
 
-alert( str.match(re) ); // #3f3 #AA0ef
+alert( str.match(re) ); // #3f3 #AA00ef
 ```
 
