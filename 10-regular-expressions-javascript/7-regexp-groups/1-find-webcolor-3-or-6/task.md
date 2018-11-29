@@ -8,7 +8,7 @@ var re = /* ваш регэксп */
 
 var str = "color: #3f3; background-color: #AA00ef; and: #abcd";
 
-alert( str.match(re) ); // #3f3 #AA0ef
+alert( str.match(re) ); // #3f3 #AA00ef
 ```
 
 P.S. Значения из любого другого количества букв, кроме 3 и 6, такие как `#abcd`, не должны подходить под регэксп.
