@@ -9,7 +9,7 @@ describe("filterRange", function() {
   it("оставляет только значения указанного интервала", function() {
     var arr = [5, 4, 3, 8, 0];
 
-    var result = filterRange(arr, 3, 5);
-    assert.deepEqual(result, [5, 4, 3]);
+    var result = filterRange(arr, 2, 4);
+    assert.deepEqual(result, [3, 8, 0]);
   });
 });
