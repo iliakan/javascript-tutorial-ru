@@ -168,7 +168,7 @@ showMenu(); // Заголовок 100 200
 
 function f() {} // f.name == "f"
 
-let g = function g() {}; // g.name == "g"
+let g = function() {}; // g.name == "g"
 
 alert(f.name + ' ' + g.name) // f g
 ```
