@@ -1,5 +1,5 @@
 
-# Set, Map, WeakSet и WeakMap
+# Map, Set, WeakMap и WeakSet
 
 В ES-2015 появились новые типы коллекций в JavaScript: `Set`, `Map`, `WeakSet` и `WeakMap`.
 
