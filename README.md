@@ -1,6 +1,6 @@
 # Учебник JavaScript
 
-Этот репозиторий содержит предыдущую версию учебника JavaScript [https://learn.javascript.ru](https://learn.javascript.ru).
+Этот репозиторий содержит предыдущую версию учебника JavaScript <https://learn.javascript.ru>.
 
 Современная версия существует на английском, китайском и японском языках <https://javascript.info>.
 
