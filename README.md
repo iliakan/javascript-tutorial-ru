@@ -1,4 +1,3 @@
-
 # Учебник JavaScript
 
 Этот репозиторий содержит предыдущую версию учебника JavaScript [https://learn.javascript.ru](https://learn.javascript.ru).
