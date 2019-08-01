@@ -1,11 +1,6 @@
 # Предыдущая версия учебника JavaScript
 
-Этот репозиторий содержит версию учебника JavaScript с <https://learn.javascript.ru>.
+Этот репозиторий содержит предыдущую версию учебника JavaScript с <https://learn.javascript.ru>.
 
-Более новая версия существует на английском, китайском и японском языках на <https://javascript.info>.
+Новая находится на <https://github.com/javascript-tutorial/ru.javascript.info>.
 
-**Пожалуйста, помогите с переводом новой английской версии на русский язык.**
-
-Это можно сделать в репозитории <https://github.com/javascript-tutorial/ru.javascript.info>.
-
-В эту версию исправления вносить уже не стоит, лучше в английскую, или сделать перевод.
