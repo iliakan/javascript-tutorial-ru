@@ -71,6 +71,6 @@ $0.style.backgroundColor = 'red';
 - `$$("div.my")` -- ищет все элементы в DOM по данному CSS-селектору.
 - `$("div.my")` -- ищет первый элемент в DOM по данному CSS-селектору.
 
-Более полная документация по методам консоли доступна на страницах [Console API Reference для Chrome](https://developers.google.com/web/tools/chrome-devtools/debug/console/console-reference) и [Command Line API для Firebug](https://getfirebug.com/wiki/index.php/Command_Line_API), а также на [firebug.ru](http://firebug.ru).
+Более полная документация по методам консоли доступна на страницах [Console API Reference для Chrome](https://developers.google.com/web/tools/chrome-devtools/debug/console/console-reference) и [Web Console для Firefox](https://developer.mozilla.org/ru/docs/Tools/Web_Console).
 
 Другие браузеры реализуют похожий функционал, освоив Chrome/Firebug, вы легко с ними разберётесь.
