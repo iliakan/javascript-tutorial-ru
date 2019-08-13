@@ -330,7 +330,7 @@ coffeeMachine.enable();
     }
 
     var machine = new Machine(...)
-    machine.public();
+    machine.publicProperty();
     ```
 2. Для наследования конструктор потомка вызывает родителя в своём контексте через `apply`. После чего может добавить свои переменные и методы:
 
